@@ -4,7 +4,10 @@
   "description": "Used as a repo to store and track progress of my node knowledge refresh.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,8 @@
   "devDependencies": {
     "@types/body-parser": "^1.19.6",
     "@types/express": "^5.0.3",
-    "@types/node": "^24.6.2"
+    "@types/node": "^24.6.2",
+    "ts-node-dev": "^2.0.0"
   },
   "dependencies": {
     "body-parser": "^2.2.0",
